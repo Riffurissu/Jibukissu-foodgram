@@ -61,7 +61,7 @@ localhost:8080
 
 ## Создание суперпользователя (админа):
 ```bash
-sudo docker compose -f docker-compose.production.yml exec backend python manage.py createsuperuser noinput
+sudo docker compose -f docker-compose.production.yml exec backend python manage.py createsuperuser --no-input --first_name=admin --last_name=admin
 ```
 
 ## На случай, если нужно наполнение тегами и ингредиентами:
